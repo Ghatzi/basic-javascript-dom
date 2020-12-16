@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Your Enemy</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="scripts/javascript.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Battle Your Enemy</h1>
+
+      <form class="form" action="index.html">
+        <div id="sectionOne">
+          <label for="nameInput">Enter your name: </label>
+          <input type="text" id="nameInput" name="nameInput" required />
+
+          <div id="enterName" class="form__messages"></div>
+
+          <label for="name2Input">Enter your enemies name: </label>
+          <input type="text" id="name2Input" name="name2Input" required />
+
+          <div id="enterEnemyName" class="form__messages"></div>
+
+          <button
+            type="button"
+            title="Click to battle"
+            id="btnName"
+            class="btn btn--enter btn--dark"
+          >
+            Go to Battle
+          </button>
+        </div>
+
+        <div id="sectionTwo">
+          <div class="form__questions">
+            <p id="p-1"></p>
+            <select id="q-1">
+              <option selected disabled hidden>Select</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
+
+          <div class="form__questions">
+            <p id="p-2"></p>
+            <select id="q-2">
+              <option selected disabled hidden>Select</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
+
+          <div class="form__questions">
+            <p id="p-3"></p>
+            <select id="q-3">
+              <option selected disabled hidden>Select</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
+
+          <div class="form__questions">
+            <p id="p-4"></p>
+            <select id="q-4">
+              <option selected disabled hidden>Select</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
+
+          <button
+            type="button"
+            title="Click to see if you won"
+            id="btn"
+            class="btn btn--dark"
+          >
+            Who Won?
+          </button>
+
+          <button
+            type="button"
+            title="Click to reset results"
+            id="reset"
+            class="btn btn--light"
+          >
+            Reset Results
+          </button>
+
+          <div id="results" class="form__messages form__results"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

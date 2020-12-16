@@ -1,0 +1,42 @@
+.btn {
+    margin-top: 3rem;
+    box-shadow: $box-shadow;
+    border: none;
+    
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            padding: 1rem;
+            transition: all .2s;
+            font-size: $medium-font-size;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        
+        &:hover {
+            transform: translateY(-3px);
+    
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        &--dark, &--light {
+            background-color: $color-secondary;
+            color: inherit;
+        }
+        
+        &--enter {
+            display: block;
+        }
+        
+    }

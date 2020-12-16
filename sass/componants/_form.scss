@@ -1,0 +1,59 @@
+
+.form {
+    margin: 0;
+    font-size: $medium-font-size;
+    color: inherit;
+
+    &__questions {
+        margin: 3rem 0;
+    }
+
+    &__messages {
+        display: none;
+        margin: 2rem 0;
+        font-weight: bold;
+        font-size: $medium-font-size;
+    }
+
+    &__results {
+        background: rgb(212,237,218);
+        padding: 1rem;
+        border-radius: 1rem;
+        color: rgb(21,87,36);
+        width: 270px;
+    }
+
+    p {
+        padding-bottom: 1rem;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    select, input[type=text] {
+        font-size: $medium-font-size;
+        color: inherit;
+        background-color: $color-primary;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: auto;
+        transition: all .2s;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+
+        &:focus {
+            border-radius: 0;
+            background-color: $color-white;
+            color: $color-black;
+        }
+
+    }
+
+    label {
+        display: block;
+        padding: 1rem 0;
+        margin: 1rem 0 0;
+    }
+
+}
